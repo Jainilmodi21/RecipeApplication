@@ -1,0 +1,30 @@
+﻿@model IEnumerable<RecipeApplication.Models.Recipe>
+
+
+@{
+    ViewData["Title"] = "All Recipes";
+}
+
+
+@{
+    Layout = "_Layout"; // Ensure that _Layout.cshtml exists in Views/Shared
+}
+
+<div class="container mt-4">
+    <h2>All Recipes</h2>
+    <div class="row mt-4">
+        @foreach (var recipe in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="~/images/default-recipe.jpg" alt="Recipe image">
+                    <div class="card-body">
+                        <h5 class="card-title">@recipe.Title</h5>
+                        <p class="card-text">@recipe.Description</p>
+                        <a href="@Url.Action("Details", "Recipes", new { id = recipe.RecipeId })" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

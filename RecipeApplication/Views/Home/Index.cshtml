@@ -1,0 +1,36 @@
+﻿@model IEnumerable<RecipeApplication.Models.Recipe>
+
+@{
+    ViewData["Title"] = "Recipes";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Correct path to your index.css file -->
+<link rel="stylesheet" href="~/css/index.css" />
+
+<form asp-controller="Home" asp-action="Search" method="get" class="form-inline search-form">
+    <input type="text" name="searchString" class="form-control search-input" placeholder="Search for recipes..." />
+    <button type="submit" class="btn btn-outline-success search-btn">Search</button>
+</form>
+
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">All Recipes</h2>
+    <div class="row">
+        @foreach (var recipe in Model)
+
+        {
+            <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                <div class="card shadow-sm h-100 w-100">
+                    <img class="card-img-top recipe-img" src="@recipe.ImageUrl" alt="Recipe image">
+                    <div class="card-body">
+                        <h5 class="card-title">@recipe.Title</h5>
+                        <p class="card-text text-truncate">@recipe.Description</p>
+                        <a href="@Url.Action("Detail", "Home", new { id = recipe.RecipeId })" class="btn btn-primary w-100">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

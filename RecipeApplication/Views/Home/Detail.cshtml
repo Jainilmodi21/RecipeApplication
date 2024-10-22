@@ -1,0 +1,121 @@
+﻿@model RecipeApplication.Models.Recipe
+
+@{
+    ViewData["Title"] = "Recipe Details";
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card mx-auto shadow-lg" style="max-width: 700px;">
+        <!-- Recipe Image -->
+        <img class="card-img-top" src="@Model.ImageUrl" alt="Recipe Image" style="max-height: 400px; object-fit: cover; border-radius: 5px 5px 0 0;">
+
+        <div class="card-body">
+            <!-- Recipe Title -->
+            <h2 class="card-title text-center text-primary mb-3" style="font-family: 'Poppins', sans-serif;">@Model.Title</h2>
+
+            <!-- Recipe Description -->
+            <p class="card-text text-muted text-justify mb-4" style="font-family: 'Roboto', sans-serif; font-size: 1.1rem;">@Model.Description</p>
+
+            <!-- Ingredients Section -->
+            <h3 class="mt-4 text-success" style="font-family: 'Poppins', sans-serif;">Ingredients</h3>
+            <ul class="list-group list-group-flush">
+                @if (Model.Ingredients != null && Model.Ingredients.Any())
+
+                {
+                    foreach (var ingredient in Model.Ingredients)
+                    {
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span style="font-family: 'Roboto', sans-serif; font-size: 1.05rem;">@ingredient.Name</span>
+                            <span class="badge badge-primary">@ingredient.Quantity</span>
+                        </li>
+                    }
+
+                }
+
+                else
+
+                {
+                    <li class="list-group-item">No ingredients listed.</li>
+                }
+            </ul>
+
+            <!-- Instructions Section -->
+            <h3 class="mt-4 text-success" style="font-family: 'Poppins', sans-serif;">Instructions</h3>
+            <ol class="list-group list-group-numbered">
+                @if (Model.Instructions != null && Model.Instructions.Any())
+
+                {
+                    foreach (var instruction in Model.Instructions)
+                    {
+                        <li class="list-group-item" style="font-family: 'Roboto', sans-serif; font-size: 1.05rem;">@instruction.Description</li>
+                    }
+
+                }
+
+                else
+
+                {
+                    <li class="list-group-item">No instructions provided.</li>
+                }
+            </ol>
+        </div>
+
+        <!-- Back Button -->
+        <div class="card-footer text-center">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to List
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- External CSS Resources -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Optional Custom CSS -->
+<style>
+    /* Customizations for the card image and borders */
+    .card-img-top {
+        border-bottom: 2px solid #f8f9fa;
+        border-radius: 5px 5px 0 0;
+    }
+
+    /* Customize the list item font size */
+    .list-group-item {
+        font-size: 1.05rem;
+    }
+
+    /* Styling for badge */
+    .badge-primary {
+        background-color: #007bff;
+        font-size: 0.9rem;
+    }
+
+    /* Styling for card footer */
+    .card-footer {
+        background-color: #f8f9fa;
+        border-top: none;
+    }
+
+    /* Adjustments for button */
+    .btn-secondary {
+        font-size: 0.95rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Font styles for headings and content */
+    h2, h3 {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+    }
+</style>

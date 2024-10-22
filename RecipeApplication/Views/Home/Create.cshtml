@@ -1,0 +1,128 @@
+﻿@model RecipeApplication.Models.ViewModels.RecipeViewModel;
+
+@{
+    ViewData["Title"] = "Create Recipe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Bootstrap CDN and FontAwesome -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="~/css/createrecipe.css" />
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">Add Recipe</h2>
+
+            <a asp-action="Index" asp-controller="Home" class="btn btn-primary mb-3">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+
+            <div class="card p-4 shadow-sm">
+                <form asp-action="Create" method="post" enctype="multipart/form-data" novalidate>
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="RecipeId" />
+
+                    <!-- Title -->
+                    <div class="form-group">
+                        <label asp-for="Title">Title*</label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-group">
+                        <label asp-for="Description">Description*</label>
+                        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <!-- Upload Image -->
+                    <div class="form-group">
+                        <label for="ImageFile">Upload Image</label>
+                        <input type="file" name="ImageFile" class="form-control-file" />
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    </div>
+
+                    <!-- Ingredients Section -->
+                    <h3 class="mt-4">Ingredients</h3>
+                    <button type="button" id="add-ingredient" class="btn btn-secondary btn-sm mb-3">Add Ingredient</button>
+                    <div id="ingredients-section">
+                        @for (var i = 0; i < Model.Ingredients.Count; i++)
+                        {
+                            <div class="form-group">
+                                <input type="hidden" asp-for="Ingredients[i].IngredientId" />
+                                <input asp-for="Ingredients[i].Name" class="form-control mb-2" placeholder="Ingredient Name" />
+                                <input asp-for="Ingredients[i].Quantity" class="form-control mb-2" placeholder="Quantity" />
+                                <span asp-validation-for="Ingredients[i].Name" class="text-danger"></span>
+                                <span asp-validation-for="Ingredients[i].Quantity" class="text-danger"></span>
+                            </div>
+                        }
+                    </div>
+
+                    <!-- Instructions Section -->
+                    <h3 class="mt-4">Instructions</h3>
+                    <button type="button" id="add-instruction" class="btn btn-secondary btn-sm mb-3">Add Instruction</button>
+                    <div id="instructions-section">
+                        @for (var i = 0; i < Model.Instructions.Count; i++)
+                        {
+                            <div class="form-group">
+                                <input type="hidden" asp-for="Instructions[i].InstructionId" />
+                                <textarea asp-for="Instructions[i].Step" class="form-control mb-2" rows="2" placeholder="Instruction Step"></textarea>
+                                <span asp-validation-for="Instructions[i].Step" class="text-danger"></span>
+                            </div>
+                        }
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group mt-4">
+                        <button type="submit" class="btn btn-info w-100">Save Recipe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Back to List Button -->
+<p class="text-center mt-3">
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">
+        <i class="fas fa-list"></i> Back to List
+    </a>
+</p>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            let ingredientIndex = @Model.Ingredients.Count;
+            let instructionIndex = @Model.Instructions.Count;
+
+            // Add new ingredient functionality
+            $('#add-ingredient').click(function () {
+                $('#ingredients-section').append(`
+                                            <div class="form-group">
+                                                <input type="hidden" name="Ingredients[${ingredientIndex}].IngredientId" value="0" />
+                                                <input name="Ingredients[${ingredientIndex}].Name" class="form-control mb-2" placeholder="Ingredient Name" />
+                                                <input name="Ingredients[${ingredientIndex}].Quantity" class="form-control mb-2" placeholder="Quantity" />
+                                                <span class="text-danger" data-valmsg-for="Ingredients[${ingredientIndex}].Name"></span>
+                                                <span class="text-danger" data-valmsg-for="Ingredients[${ingredientIndex}].Quantity"></span>
+                                            </div>
+                                        `);
+                ingredientIndex++;
+            });
+
+            // Add new instruction functionality
+            $('#add-instruction').click(function () {
+                $('#instructions-section').append(`
+                                            <div class="form-group">
+                                                <input type="hidden" name="Instructions[${instructionIndex}].InstructionId" value="0" />
+                                                <textarea name="Instructions[${instructionIndex}].Step" class="form-control mb-2" rows="2" placeholder="Instruction Step"></textarea>
+                                                <span class="text-danger" data-valmsg-for="Instructions[${instructionIndex}].Step"></span>
+                                            </div>
+                                        `);
+                instructionIndex++;
+            });
+        });
+    </script>
+}

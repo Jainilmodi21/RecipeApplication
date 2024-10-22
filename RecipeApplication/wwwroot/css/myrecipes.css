@@ -1,0 +1,49 @@
+﻿.table {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+    .table th {
+        text-align: center;
+        background-color: #343a40; /* Dark header */
+        color: white;
+    }
+
+    .table td {
+        text-align: left;
+    }
+
+        .table td .btn {
+            margin: 0 4px;
+        }
+
+.thead-dark {
+    background-color: #343a40;
+}
+
+.btn-sm {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.75rem;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.text-right {
+    margin-top: 20px;
+}

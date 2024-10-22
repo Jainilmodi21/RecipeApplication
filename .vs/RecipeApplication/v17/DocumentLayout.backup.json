@@ -1,0 +1,272 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\wwwroot\\css\\myrecipes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\wwwroot\\css\\myrecipes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\wwwroot\\css\\createrecipe.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\wwwroot\\css\\createrecipe.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\views\\home\\myrecipes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\views\\home\\myrecipes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RecipeApplication/True/SqlTable/dbo.Recipes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\models\\viewmodels\\recipeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\models\\viewmodels\\recipeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RecipeApplication/True/SqlTable/dbo.Ingredients.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RecipeApplication/True/SqlTable/dbo.Instructions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\repository\\reciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\repository\\reciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|c:\\users\\admin\\desktop\\sem_5\\wad\\dotnet core\\recipeapplication-main\\recipeapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128AF9AD-8513-4BC8-9280-50B74BC395FF}|RecipeApplication\\RecipeApplication.csproj|solutionrelative:recipeapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecipeApplication\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RecipeApplication\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T08:28:52.325Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Delete.cshtml",
+              "RelativeDocumentMoniker": "RecipeApplication\\Views\\Home\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Delete.cshtml",
+              "RelativeToolTip": "RecipeApplication\\Views\\Home\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T13:06:57.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "createrecipe.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\wwwroot\\css\\createrecipe.css",
+              "RelativeDocumentMoniker": "RecipeApplication\\wwwroot\\css\\createrecipe.css",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\wwwroot\\css\\createrecipe.css",
+              "RelativeToolTip": "RecipeApplication\\wwwroot\\css\\createrecipe.css",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-22T12:54:19.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "myrecipes.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\wwwroot\\css\\myrecipes.css",
+              "RelativeDocumentMoniker": "RecipeApplication\\wwwroot\\css\\myrecipes.css",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\wwwroot\\css\\myrecipes.css",
+              "RelativeToolTip": "RecipeApplication\\wwwroot\\css\\myrecipes.css",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-22T12:51:57.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MyRecipes.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\MyRecipes.cshtml",
+              "RelativeDocumentMoniker": "RecipeApplication\\Views\\Home\\MyRecipes.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\MyRecipes.cshtml",
+              "RelativeToolTip": "RecipeApplication\\Views\\Home\\MyRecipes.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAuwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T12:46:49.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\wwwroot\\css\\index.css",
+              "RelativeDocumentMoniker": "RecipeApplication\\wwwroot\\css\\index.css",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\wwwroot\\css\\index.css",
+              "RelativeToolTip": "RecipeApplication\\wwwroot\\css\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-22T12:41:56.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.Recipes.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RecipeApplication/True/SqlTable/dbo.Recipes.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RecipeApplication/True/SqlTable/dbo.Recipes.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-22T11:08:41.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "dbo.Ingredients.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RecipeApplication/True/SqlTable/dbo.Ingredients.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RecipeApplication/True/SqlTable/dbo.Ingredients.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-22T09:38:23.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "dbo.Instructions.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RecipeApplication/True/SqlTable/dbo.Instructions.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RecipeApplication/True/SqlTable/dbo.Instructions.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-22T09:36:40.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RecipeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Repository\\RecipeRepository.cs",
+              "RelativeDocumentMoniker": "RecipeApplication\\Repository\\RecipeRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Repository\\RecipeRepository.cs",
+              "RelativeToolTip": "RecipeApplication\\Repository\\RecipeRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:31:00.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RecipeApplication\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RecipeApplication\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAADdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T07:57:07.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Detail.cshtml",
+              "RelativeDocumentMoniker": "RecipeApplication\\Views\\Home\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Detail.cshtml",
+              "RelativeToolTip": "RecipeApplication\\Views\\Home\\Detail.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwEcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T07:52:20.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RecipeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Models\\ViewModels\\RecipeViewModel.cs",
+              "RelativeDocumentMoniker": "RecipeApplication\\Models\\ViewModels\\RecipeViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Models\\ViewModels\\RecipeViewModel.cs",
+              "RelativeToolTip": "RecipeApplication\\Models\\ViewModels\\RecipeViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T07:36:47.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RecipeApplication\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RecipeApplication\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAuwMQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:21:05.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Create.cshtml",
+              "RelativeDocumentMoniker": "RecipeApplication\\Views\\Home\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Create.cshtml",
+              "RelativeToolTip": "RecipeApplication\\Views\\Home\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-19T17:03:09.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Edit.cshtml",
+              "RelativeDocumentMoniker": "RecipeApplication\\Views\\Home\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Sem_5\\WAD\\dotnet core\\RecipeApplication-main\\RecipeApplication\\Views\\Home\\Edit.cshtml",
+              "RelativeToolTip": "RecipeApplication\\Views\\Home\\Edit.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-19T17:05:21.101Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

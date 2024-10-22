@@ -1,0 +1,134 @@
+﻿@model RecipeApplication.Models.ViewModels.RecipeViewModel;
+
+@{
+    ViewData["Title"] = "Edit Recipe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Bootstrap CSS Link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+<h2 class="text-center my-4" style="font-family: 'Poppins', sans-serif;">@ViewBag.Title Recipe</h2>
+
+<form asp-action="Edit" method="post" class="container">
+    <input type="hidden" asp-for="RecipeId" />
+
+    <div class="form-group">
+        <label asp-for="Title" style="font-family: 'Roboto', sans-serif;"></label>
+        <input asp-for="Title" class="form-control" style="font-family: 'Roboto', sans-serif;" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" style="font-family: 'Roboto', sans-serif;"></label>
+        <textarea asp-for="Description" class="form-control" style="font-family: 'Roboto', sans-serif;"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <!-- Ingredients Section -->
+    <h3 style="font-family: 'Poppins', sans-serif;">Ingredients</h3>
+    <button type="button" id="add-ingredient" class="btn btn-secondary mb-3">Add Ingredient</button>
+
+    <div id="ingredients-section">
+        @for (var i = 0; i < Model.Ingredients.Count; i++)
+        {
+            <div class="form-group">
+                <input type="hidden" asp-for="Ingredients[i].IngredientId" />
+                <input asp-for="Ingredients[i].Name" class="form-control" placeholder="Ingredient Name" />
+                <input asp-for="Ingredients[i].Quantity" class="form-control" placeholder="Quantity" />
+                <input type="checkbox" asp-for="Ingredients[i].IsDeleted" /> Mark for deletion
+                <span asp-validation-for="Ingredients[i].Name" class="text-danger"></span>
+                <span asp-validation-for="Ingredients[i].Quantity" class="text-danger"></span>
+            </div>
+        }
+    </div>
+
+    <!-- Instructions Section -->
+    <h3 style="font-family: 'Poppins', sans-serif;">Instructions</h3>
+    <button type="button" id="add-instruction" class="btn btn-secondary mb-3">Add Instruction</button>
+
+    <div id="instructions-section">
+        @for (var i = 0; i < Model.Instructions.Count; i++)
+        {
+            <div class="form-group">
+                <input type="hidden" asp-for="Instructions[i].InstructionId" />
+                <textarea asp-for="Instructions[i].Step" class="form-control" placeholder="Instruction Step"></textarea>
+                <input type="checkbox" asp-for="Instructions[i].IsDeleted" /> Mark for deletion
+                <span asp-validation-for="Instructions[i].Step" class="text-danger"></span>
+            </div>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Recipe</button>
+</form>
+
+<p class="text-center my-4">
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Back to List</a>
+</p>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let ingredientIndex = @Model.Ingredients.Count;
+            let instructionIndex = @Model.Instructions.Count;
+
+            // Add new ingredient functionality
+            $('#add-ingredient').click(function () {
+                $('#ingredients-section').append(`
+                            <div class="form-group">
+                                <input type="hidden" name="Ingredients[${ingredientIndex}].IngredientId" value="0" />
+                                <input name="Ingredients[${ingredientIndex}].Name" class="form-control" placeholder="Ingredient Name" />
+                                <input name="Ingredients[${ingredientIndex}].Quantity" class="form-control" placeholder="Quantity" />
+                                <input type="checkbox" name="Ingredients[${ingredientIndex}].IsDeleted" /> Mark for deletion
+                                <span class="text-danger" data-valmsg-for="Ingredients[${ingredientIndex}].Name"></span>
+                                <span class="text-danger" data-valmsg-for="Ingredients[${ingredientIndex}].Quantity"></span>
+                            </div>
+                        `);
+                ingredientIndex++;
+            });
+
+            // Add new instruction functionality
+            $('#add-instruction').click(function () {
+                $('#instructions-section').append(`
+                            <div class="form-group">
+                                <input type="hidden" name="Instructions[${instructionIndex}].InstructionId" value="0" />
+                                <textarea name="Instructions[${instructionIndex}].Step" class="form-control" placeholder="Instruction Step"></textarea>
+                                <input type="checkbox" name="Instructions[${instructionIndex}].IsDeleted" /> Mark for deletion
+                                <span class="text-danger" data-valmsg-for="Instructions[${instructionIndex}].Step"></span>
+                            </div>
+                        `);
+                instructionIndex++;
+            });
+        });
+    </script>
+}
+
+<!-- Optional Custom CSS -->
+<style>
+    /* Custom styling for form elements */
+    .form-group label {
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .form-control {
+        border-radius: 0.25rem;
+    }
+
+    /* Button styling */
+    .btn-secondary {
+        font-weight: bold;
+    }
+
+    /* Centered title and back button */
+    h2 {
+        color: #007bff;
+    }
+
+    .text-danger {
+        font-size: 0.9rem;
+    }
+</style>

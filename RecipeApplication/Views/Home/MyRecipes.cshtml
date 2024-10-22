@@ -1,0 +1,53 @@
+﻿@model IEnumerable<RecipeApplication.Models.Recipe>
+
+@{
+    ViewData["Title"] = "My Recipes";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/css/myrecipes.css" />
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center mb-4">Recipes List</h2>
+            <table class="table table-striped table-bordered shadow-sm">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var recipe in Model)
+
+                    {
+                        <tr>
+                            <td>@recipe.Title</td>
+                            <td>@recipe.Description</td>
+                            <td class="text-center">
+                                <a href="@Url.Action("Detail", "Home", new { id = recipe.RecipeId })" class="btn btn-primary btn-sm">View Recipe</a>
+                                <a href="@Url.Action("Edit", "Home", new { id = recipe.RecipeId })" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="@Url.Action("Delete", "Home", new { id = recipe.RecipeId })" class="btn btn-danger btn-sm">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                    @if (!Model.Any())
+
+                    {
+                        <tr>
+                            <td colspan="3" class="text-center">No recipes available.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="text-right">
+                @Html.ActionLink("Create New Recipe", "Create", "Home", null, new { @class = "btn btn-success" })
+            </div>
+        </div>
+    </div>
+</div>
